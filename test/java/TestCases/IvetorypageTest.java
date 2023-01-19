@@ -34,12 +34,13 @@ public class IvetorypageTest extends TestBase {
 	String result = ivtPage.cart();	
 	Assert.assertEquals(result,"2");
 		Reporter.log("product added " +result);
+		
 	}
 	
 	
 	@AfterMethod
 	public void driverClose()
-	{driver.manage.DeleteAllcookies();
+	{driver.manage().deleteAllCookies();
 		driver.close();
 	}
 	
