@@ -39,7 +39,7 @@ public class IvetorypageTest extends TestBase {
 	
 	@AfterMethod
 	public void driverClose()
-	{
+	{driver.manage.DeleteAllcookies();
 		driver.close();
 	}
 	
